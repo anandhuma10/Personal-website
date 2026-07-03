@@ -117,9 +117,7 @@
         <div class="w-full h-full rounded-full border-4 border-white shadow-2xl overflow-hidden bg-gray-100 pb-0">
           <!-- Added fallback avatar via onerror in case local image is broken -->
   
-<img src="img1.jpeg"
-     alt="Anandhu M.A"
-     class="w-full h-full object-cover object-[center_32%] 
+<img src="../static/images/pic.jpeg" alt="Anandhu M.A" class="w-full h-full object-cover object-[center_32%] 
             transition-transform duration-500 hover:scale-110">
         </div>
       </div>
@@ -200,75 +198,99 @@
       <!-- Responsive Grid Layout implementation for projects -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
-        <!-- Project Item 1 -->
-        <div class="project-card bg-white rounded-3xl overflow-hidden border border-gray-100 flex flex-col h-full reveal">
-          <div class="h-56 bg-white relative overflow-hidden group border-b border-gray-50">
-            <div class="absolute inset-0 bg-blue-600/5 group-hover:bg-transparent transition-colors z-10 duration-300"></div>
-            <!-- Dynamic Pattern Background -->
-            <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100/50">
-                <i class="bi bi-terminal text-7xl text-primary opacity-40 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"></i>
-            </div>
-          </div>
-          <div class="p-8 flex-1 flex flex-col">
-            <div class="flex items-center gap-2 mb-4">
-              <span class="text-[11px] font-bold tracking-wider uppercase text-blue-700 bg-blue-100/50 px-2.5 py-1 rounded-full">Python</span>
-              <span class="text-[11px] font-bold tracking-wider uppercase text-slate-600 bg-slate-100 px-2.5 py-1 rounded-full">Django</span>
-            </div>
-            <h3 class="text-2xl font-bold mb-3 text-dark">Data Processor Tool</h3>
-            <p class="text-secondary text-sm mb-8 flex-1 leading-relaxed">A robust backend command-line tool built with Python to process and analyze large datasets efficiently, outputting clean, actionable insights.</p>
-            <a href="#" class="group inline-flex items-center text-primary font-bold text-sm hover:text-blue-800 transition-colors w-max">
-              View Project Details 
-              <i class="bi bi-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
-            </a>
-          </div>
-        </div>
+      <!-- Project Item : CarePulse Hospital -->
+<div class="project-card bg-white rounded-3xl overflow-hidden border border-gray-100 flex flex-col h-full reveal shadow-sm hover:shadow-xl transition-all duration-300">
 
-        <!-- Project Item 2 -->
-        <div class="project-card bg-white rounded-3xl overflow-hidden border border-gray-100 flex flex-col h-full reveal" style="transition-delay: 100ms;">
-          <div class="h-56 bg-white relative overflow-hidden group border-b border-gray-50">
-            <div class="absolute inset-0 bg-emerald-600/5 group-hover:bg-transparent transition-colors z-10 duration-300"></div>
-            <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-emerald-50 to-emerald-100/50">
-                <i class="bi bi-window-sidebar text-7xl text-emerald-500 opacity-40 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"></i>
-            </div>
-          </div>
-          <div class="p-8 flex-1 flex flex-col">
-            <div class="flex items-center gap-2 mb-4">
-              <span class="text-[11px] font-bold tracking-wider uppercase text-emerald-700 bg-emerald-100/50 px-2.5 py-1 rounded-full">Frontend</span>
-              <span class="text-[11px] font-bold tracking-wider uppercase text-slate-600 bg-slate-100 px-2.5 py-1 rounded-full">UI/UX</span>
-            </div>
-            <h3 class="text-2xl font-bold mb-3 text-dark">Interactive Dashboard</h3>
-            <p class="text-secondary text-sm mb-8 flex-1 leading-relaxed">A responsive, user-friendly frontend dashboard featuring interactive elements, clean data visualization, and modern UI principles.</p>
-            <a href="#" class="group inline-flex items-center text-primary font-bold text-sm hover:text-blue-800 transition-colors w-max">
-              View Project Details 
-              <i class="bi bi-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
-            </a>
-          </div>
-        </div>
+  <!-- Project Image -->
+  <div class="h-56 overflow-hidden group border-b border-gray-100">
+    <img src="../static/images/carepulse.jpg">
+      alt="CarePulse Hospital"
+      class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+    >
+  </div>
 
-        <!-- Project Item 3 -->
-        <div class="project-card bg-white rounded-3xl overflow-hidden border border-gray-100 flex flex-col h-full reveal" style="transition-delay: 200ms;">
-          <div class="h-56 bg-white relative overflow-hidden group border-b border-gray-50">
-            <div class="absolute inset-0 bg-purple-600/5 group-hover:bg-transparent transition-colors z-10 duration-300"></div>
-            <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-purple-50 to-purple-100/50">
-                <i class="bi bi-diagram-3 text-7xl text-purple-500 opacity-40 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"></i>
-            </div>
-          </div>
-          <div class="p-8 flex-1 flex flex-col">
-            <div class="flex items-center gap-2 mb-4">
-              <span class="text-[11px] font-bold tracking-wider uppercase text-purple-700 bg-purple-100/50 px-2.5 py-1 rounded-full">Full Stack</span>
-              <span class="text-[11px] font-bold tracking-wider uppercase text-slate-600 bg-slate-100 px-2.5 py-1 rounded-full">REST API</span>
-            </div>
-            <h3 class="text-2xl font-bold mb-3 text-dark">Task Manager App</h3>
-            <p class="text-secondary text-sm mb-8 flex-1 leading-relaxed">A comprehensive task management solution establishing RESTful APIs alongside seamless user authentication mapping to a dynamic frontend view.</p>
-            <a href="#" class="group inline-flex items-center text-primary font-bold text-sm hover:text-blue-800 transition-colors w-max">
-              View Project Details 
-              <i class="bi bi-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
-            </a>
-          </div>
-        </div>
+  <!-- Project Content -->
+  <div class="p-8 flex flex-col flex-1">
 
-      </div>
+    <!-- Technology Tags -->
+    <div class="flex flex-wrap gap-2 mb-4">
+      <span class="text-[11px] font-bold uppercase tracking-wider text-blue-700 bg-blue-100 px-3 py-1 rounded-full">
+        Python
+      </span>
+
+      <span class="text-[11px] font-bold uppercase tracking-wider text-green-700 bg-green-100 px-3 py-1 rounded-full">
+        Django
+      </span>
+
+      <span class="text-[11px] font-bold uppercase tracking-wider text-purple-700 bg-purple-100 px-3 py-1 rounded-full">
+        PostgreSQL
+      </span>
+
+      <span class="text-[11px] font-bold uppercase tracking-wider text-orange-700 bg-orange-100 px-3 py-1 rounded-full">
+        Bootstrap
+      </span>
+
+      <span class="text-[11px] font-bold uppercase tracking-wider text-red-700 bg-red-100 px-3 py-1 rounded-full">
+        JavaScript
+      </span>
     </div>
+
+    <!-- Project Title -->
+    <h3 class="text-2xl font-bold text-dark mb-3">
+      CarePulse Hospital
+    </h3>
+
+    <!-- Project Description -->
+    <p class="text-secondary text-sm leading-relaxed mb-6 flex-1">
+      A full-stack healthcare management system built with Django and
+      PostgreSQL that streamlines patient appointments and communication
+      between patients, doctors, and hospital staff.
+
+      Features include:
+    </p>
+
+    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+      <li>✅ Online appointment booking system</li>
+      <li>✅ Doctor and department management</li>
+      <li>✅ Automated email notifications</li>
+      <li>✅ Secure admin dashboard</li>
+      <li>✅ Patient management and scheduling</li>
+    </ul>
+
+    <!-- Buttons -->
+    <div class="flex flex-wrap gap-5">
+
+      <a
+        href="https://carepulse-hospital.onrender.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center text-primary font-bold text-sm hover:text-blue-800 transition-colors"
+      >
+        <i class="bi bi-box-arrow-up-right mr-2"></i>
+        Live Demo
+      </a>
+
+      <a
+        href="https://github.com/anandhuma10/carepulse-hospital"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center text-primary font-bold text-sm hover:text-blue-800 transition-colors"
+      >
+        <i class="bi bi-github mr-2"></i>
+        GitHub
+      </a>
+
+    </div>
+
+    <!-- Render Notice -->
+    <div class="mt-5">
+      <p class="text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg p-3">
+        ⚠️ First load may take 30–60 seconds because the application is hosted on Render's free tier.
+      </p>
+    </div>
+
+  </div>
+</div>
   </section>
 
   <!-- Contact Module -->
@@ -316,7 +338,7 @@
              |<a href="https://gitlab.com/anandhuma468" target="_blank" aria-label="GitLab Profile" class="w-12 h-12 rounded-xl bg-gray-800 border border-gray-700 flex items-center justify-center text-gray-300 hover:text-white hover:bg-gray-700 hover:border-gray-600 transition-all group">
                 <i class="fab fa-gitlab text-xl group-hover:scale-110 transition-transform"></i>
               </a>
-            <a href="https://www.linkedin.com/in/anandhu-m-a-42366a26b"  target="_blank" aria-label="LinkedIn Profile" class="w-12 h-12 rounded-xl bg-gray-800 border border-gray-700 flex items-center justify-center text-gray-300 hover:text-white hover:bg-gray-700 hover:border-gray-600 transition-all group">
+            <a href="https://www.linkedin.com/in/anandhu-ma"  target="_blank" aria-label="LinkedIn Profile" class="w-12 h-12 rounded-xl bg-gray-800 border border-gray-700 flex items-center justify-center text-gray-300 hover:text-white hover:bg-gray-700 hover:border-gray-600 transition-all group">
               <i class="bi bi-linkedin text-xl group-hover:scale-110 transition-transform"></i>
             </a>
             <a href="https://x.com/AnandhuMA444693"  aria-label="Twitter/X Profile" class="w-12 h-12 rounded-xl bg-gray-800 border border-gray-700 flex items-center justify-center text-gray-300 hover:text-white hover:bg-gray-700 hover:border-gray-600 transition-all group">
@@ -384,4 +406,4 @@
     });
   </script>
 </body>
-</html> 1
+</html>
